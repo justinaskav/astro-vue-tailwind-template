@@ -18,5 +18,7 @@ export default buildConfig({
   },
   plugins: [
     payloadCloud()
-  ]
+  ],
+  // debug based on env
+  debug: process.env.NODE_ENV === 'development',
 });
